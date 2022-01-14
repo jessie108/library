@@ -50,9 +50,9 @@ function createBookCard(book) {
 <div class='bookCardTitle'>Title: ${bookTitle.value}</div>
 <div class='bookCardAuthor'>Author: ${bookAuthor.value}</div>
 <div class='bookCardPages'>Pages: ${bookPages.value}</div> 
-<button class='cardRead ${
+<button class='cardRead ${book.read === true ? "read" : "unread"}' >${
     book.read === true ? "read" : "unread"
-  }'' >Read</button> `;
+  }</button> `;
 
   const divFRAG = document.createRange().createContextualFragment(divHTML);
   const bookCard = document.createElement("div");
@@ -106,5 +106,5 @@ function resetForm() {
   bookTitle.value = "";
   bookAuthor.value = "";
   bookPages.value = "";
-  // bookCheck.checked = false;
+  bookCheck.checked = false;
 }
