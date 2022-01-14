@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,500;1,100&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,500;1,100&family=Oswald:wght@300;400;700&family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+  background-color: #f1f1f1;
+}
+
+.title {
+  text-align: left;
+  height: 150px;
+  padding: 30px 0 30px 150px;
+  /* padding-left: 30px; */
+  font-size: 90px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  color: #eac217;
+  background-color: #609ca1;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 70px 200px;
+  width: 150px;
+  height: 70px;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(37, 35, 35);
+  background-color: #eac217;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(230, 133, 22);
+  color: #fff;
+}
+
+/* 
+  Pop up
+*/
+#popup {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 400px;
+  height: 600px;
+  background: #e7eeed;
+  border: 1px solid gray;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  z-index: 1;
+}
+.close {
+  text-align: end;
+  font-size: 18px;
+  cursor: pointer;
+  /* make right */
+  margin-left: auto;
+  width: min-content;
+  transition: 0.3s all;
+}
+
+.close:hover {
+  font-size: 22px;
+}
+h2 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #131313;
+}
+.userInput {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  gap: 5px;
+}
+.styleInput {
+  /* width: 100%; */
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid #14333d;
+  border-radius: 4px;
+  font-size: 18px;
+  /* outline: none; */
+  padding: 0 5px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+#read {
+  width: 20px;
+  height: 20px;
+}
+#submit {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 45px;
+  font-size: 18px;
+  color: white;
+  font-weight: bolder;
+  background: #cc512c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+/* read or not */
+.read {
+  background-color: rgb(13, 97, 76);
+}
+.unread {
+  background-color: rgb(116, 15, 15);
+}
+
+/* bookcard */
+.library {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 30px 0 30px 150px;
+}
+.bookCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex-basis: 330px;
+  height: 365px;
+  background: #89644eeb;
+  /* border: 1px solid rgb(38, 133, 150); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 30px;
+  color: rgb(240, 236, 229);
+}
+.bookCard:hover {
+  box-shadow: 0px 3px 5px 2px rgba(57, 169, 184, 0.35);
+}
+
+.cardRead {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 86px;
+  height: 34px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 15px;
+  border-radius: 10px;
+}

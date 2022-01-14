@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+   
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  
+ 
+
+</head>
+
+<body>
+  <div class=title>
+    <img src="/img/book.png" alt="">
+    <span>Library </span>
+     </div>
+  <button class="button" >Add Book</button>
+  <div id="popup"> 
+    <div class="close"id="popupClose">&#10006;</div>
+    <h2>Add New Book</h2>
+    <div class='userInput'>
+      <label for="bookTitle">Title</label>
+      <input required type="text" id='bookTitle'  class='styleInput'>
+    </div> 
+    <div class='userInput'>
+      <label for="author">Author:</label>
+      <input required type="text"  id='author' class='styleInput'>
+    </div> 
+    <div class='userInput'>
+      <label for="pages">Pages</label>
+      <input required type="text"  id='pages' class='styleInput'>
+    </div> 
+    <div class='check'>
+      <label for="read">Read</label>
+      <input type="checkbox" id='read'  >
+    </div> 
+    <button type="submit" id="submit">Submit</button>
+  </div>
+
+  <div class="library" >
+    <!-- <div class='bookCard'> -->
+      <!-- <div class='close' data-type='CardClose'>&#10006;</div>
+      <div class='bookCardTitle'>Title</div>
+      <div class='bookCardAuthor'>Author</div>
+      <div class='bookCardPages'>Pages</div> 
+      <button class='cardRead' >read</button> -->
+
+    </div>
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
